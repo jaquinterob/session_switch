@@ -13,7 +13,7 @@ $_SESSION[$row_session['aplicativo']]=$row_usuario[$row_session['switch']];
 }
 
 print_r( $_SESSION );
- 
+
 function obtener_row_usuario($usuario){
   global $connect;
   $sql="SELECT * FROM switch.usuarios WHERE usuario='".$usuario."'";
