@@ -12,10 +12,8 @@ while ($row_session=$res->fetch_assoc()) {
 $_SESSION[$row_session['aplicativo']]=$row_usuario[$row_session['switch']];
 }
 
-echo 'mda= '.$_SESSION['mda'].'<br>';
-echo 'mensajeriapp= '.$_SESSION['mensajeriapp'].'<br>';
-echo 'te_informo= '.$_SESSION['te_informo'];
-
+print_r( $_SESSION );
+ 
 function obtener_row_usuario($usuario){
   global $connect;
   $sql="SELECT * FROM switch.usuarios WHERE usuario='".$usuario."'";
